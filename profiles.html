@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Fieldset Example</title>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form>
+
+        <!-- Personal Information Group -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required minlength="3"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+        </fieldset>
+        <br>
+
+        <!-- Account Information Group -->
+        <fieldset>
+            <legend>Account Information</legend>
+
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required pattern="[A-Za-z0-9]+" title="Letters and numbers only"><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required minlength="6"><br><br>
+
+        </fieldset>
+        <br>
+
+        <input type="submit" value="Register">
+
+    </form>
+
+</body>
+</html>
