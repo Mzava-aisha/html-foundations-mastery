@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Extended Form</title>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form>
+
+        <!-- Name -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <!-- Select Dropdown -->
+        <label for="course">Select Course:</label><br>
+        <select id="course" name="course">
+            <option value="">--Choose a course--</option>
+            <option value="networking">Networking</option>
+            <option value="cybersecurity">Cybersecurity</option>
+            <option value="programming">Programming</option>
+        </select><br><br>
+
+        <!-- Radio Buttons -->
+        <label>Study Mode:</label><br>
+        <input type="radio" id="online" name="mode" value="online">
+        <label for="online">Online</label><br>
+
+        <input type="radio" id="physical" name="mode" value="physical">
+        <label for="physical">Physical</label><br><br>
+
+        <!-- Textarea -->
+        <label for="message">Additional Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+
+        <!-- Submit -->
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>
